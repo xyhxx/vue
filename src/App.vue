@@ -46,7 +46,7 @@ export default {
     tabBar,
   },
   methods: {
-    // 接收子组件的tabbar切换路由
+    // 接收子组件的tabbar切换路由展示
     barRouter(idx) {
       const pathName = this.$data.tabBarItem[idx].router;
       const nowPath = this.$route.name;

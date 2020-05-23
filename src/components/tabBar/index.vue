@@ -48,7 +48,7 @@ export default {
     },
   },
   created() {
-    // 检查刷新后的active指向问题 主要用在pc上 移动端不会有刷新
+    // 检查刷新后的active指向问题 主要用在pc上 移动端不会有刷新操作
     const nowPathName = sessionStorage.getItem('nowPath');
     const result = this.filterArrName(nowPathName);
     if (result > 0) this.activeIdx = result;

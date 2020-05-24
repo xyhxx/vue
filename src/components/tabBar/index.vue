@@ -6,8 +6,8 @@
       :key="name"
       @click="barClick(idx)"
     >
-      <img :src="activeImg" v-if="idx === activeIdx" />
-      <img :src="img" v-else />
+      <img :src="activeImg" v-show="idx === activeIdx" />
+      <img :src="img" v-show="idx !== activeIdx" />
       <p :class="{ active: idx === activeIdx }">{{ name }}</p>
     </div>
   </div>

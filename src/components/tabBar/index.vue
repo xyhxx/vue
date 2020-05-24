@@ -63,7 +63,7 @@ export default {
   height: 49px;
 }
 .tabBarItems {
-  flex: 1;
+  flex-grow: 1;
 }
 .tabBarItems > p {
   text-align: center;
